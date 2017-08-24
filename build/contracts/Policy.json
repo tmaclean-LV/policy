@@ -1,0 +1,466 @@
+{
+  "contract_name": "Policy",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "active",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "status",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_beneficiary",
+          "type": "address"
+        }
+      ],
+      "name": "purchase",
+      "outputs": [],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "benefit",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "getPayment",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "beneficiary",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "numberOfPayments",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "risk",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "expired",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "policyAge",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "goodStanding",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_benefit",
+          "type": "uint256"
+        },
+        {
+          "name": "_term",
+          "type": "uint256"
+        },
+        {
+          "name": "_risk",
+          "type": "uint256"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "collected",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "collectBenefit",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "term",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "TERM_LENGTH",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "makePayment",
+      "outputs": [],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "purchasedDate",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "premium",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawl",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "distribute",
+      "outputs": [],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "CURRENCY",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "admin",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_date",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_premium",
+          "type": "uint256"
+        }
+      ],
+      "name": "PolicyPayment",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052600060018190556003819055600481905560058190556006556007805461ffff19169055341561003357600080fd5b5b610b1d806100436000396000f3006060604052361561013b5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166302fb0c5e8114610140578063200d2ed21461016757806325b31a97146101c35780632e5113b7146101d95780633280a836146101fe57806338af3eed1461022c578063422f963c1461025b578063426a0c88146102805780634c2067c7146102a557806366f208ae146102cc578063699182ec146102f157806380d859111461031857806384bcefd4146103465780638da5cb5b1461036d5780639c3a085f1461039c578063a10ffbed146103b1578063adb0cad9146103d6578063d8d79700146103fb578063dbf15b8514610405578063e0a73a931461042a578063e4480dd81461044f578063e4fc6b6d14610467578063f536121914610471578063f851a44014610496575b600080fd5b341561014b57600080fd5b6101536104c5565b604051901515815260200160405180910390f35b341561017257600080fd5b61017a6104ce565b60405197885260208801969096526040808801959095526060870193909352608086019190915260a0850152151560c084015290151560e0830152610100909101905180910390f35b6101d7600160a060020a03600435166104fa565b005b34156101e457600080fd5b6101ec610675565b60405190815260200160405180910390f35b341561020957600080fd5b61021460043561067b565b60405191825260208201526040908101905180910390f35b341561023757600080fd5b61023f6106ce565b604051600160a060020a03909116815260200160405180910390f35b341561026657600080fd5b6101ec6106dd565b60405190815260200160405180910390f35b341561028b57600080fd5b6101ec6106e4565b60405190815260200160405180910390f35b34156102b057600080fd5b6101536106ea565b604051901515815260200160405180910390f35b34156102d757600080fd5b6101ec610705565b60405190815260200160405180910390f35b34156102fc57600080fd5b61015361070e565b604051901515815260200160405180910390f35b341561032357600080fd5b6101ec600435602435604435610739565b60405190815260200160405180910390f35b341561035157600080fd5b6101536107d4565b604051901515815260200160405180910390f35b341561037857600080fd5b61023f6107e2565b604051600160a060020a03909116815260200160405180910390f35b34156103a757600080fd5b6101d76107f7565b005b34156103bc57600080fd5b6101ec610895565b60405190815260200160405180910390f35b34156103e157600080fd5b6101ec61089b565b60405190815260200160405180910390f35b6101d76108a3565b005b341561041057600080fd5b6101ec61097d565b60405190815260200160405180910390f35b341561043557600080fd5b6101ec610983565b60405190815260200160405180910390f35b341561045a57600080fd5b6101d7600435610989565b005b6101d76109d7565b005b341561047c57600080fd5b6101ec610a66565b60405190815260200160405180910390f35b34156104a157600080fd5b61023f610a72565b604051600160a060020a03909116815260200160405180910390f35b60075460ff1681565b60015460025460035460045460055460065460075460ff808216916101009004165b9091929394959697565b610502610a81565b7f1c91d0f8bf2ec0fe67e63e119ac3a1c966c0199af26633feb10f8fd527872db1423460045460405180848152602001838152602001828152602001935050505060405180910390a160045434101561055a57600080fd5b6009805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a03848116919091179091556007805475ffffffffffffffffffffffffffffffffffffffff0000191662010000339093169290920291909117905542600255604080519081016040524281523460208201526000805491925090600181016105e38382610a98565b916000526020600020906002020160005b5082908151815560208201516001918201558054349081019091557f1c91d0f8bf2ec0fe67e63e119ac3a1c966c0199af26633feb10f8fd527872db19250429150600160a060020a0330163160405180848152602001838152602001828152602001935050505060405180910390a16007805460ff191660011790555b5050565b60035481565b60008060008381548110151561068d57fe5b906000526020600020906002020160005b505460008054859081106106ae57fe5b906000526020600020906002020160005b5060010154915091505b915091565b600954600160a060020a031681565b6000545b90565b60055481565b60006301e13380600654026106fd610705565b101590505b90565b60025442035b90565b60006301e1338061071d610705565b81151561072657fe5b0460010160045402600154101590505b90565b6003546000901561074957600080fd5b6006541561075657600080fd5b6001821161076357600080fd5b6001831161077057600080fd5b6000841161077d57600080fd5b6008805473ffffffffffffffffffffffffffffffffffffffff191633600160a060020a031617905560068390556003849055600582905581600a8402858115156107c357fe5b0402600481905590505b9392505050565b600754610100900460ff1681565b600754620100009004600160a060020a031681565b60095433600160a060020a0390811691161461081257600080fd5b60075460ff161561082257600080fd5b600754610100900460ff161561083757600080fd5b600354600160a060020a03301631101561085057600080fd5b6007805461ff001916610100179055600354600160a060020a0333169080156108fc0290604051600060405180830381858888f19350505050151561089157fe5b5b5b565b60065481565b6301e1338081565b6108ab610a81565b60075433600160a060020a039081166201000090920416146108cc57600080fd5b7f1c91d0f8bf2ec0fe67e63e119ac3a1c966c0199af26633feb10f8fd527872db1423460045460405180848152602001838152602001828152602001935050505060405180910390a160045434101561092457600080fd5b6040805190810160405242815234602082015260008054919250906001810161094d8382610a98565b916000526020600020906002020160005b50829081518155602082015160019182015580543401905550505b5b50565b60025481565b60045481565b60085433600160a060020a039081169116146109a457600080fd5b600160a060020a03331681156108fc0282604051600060405180830381858888f19350505050151561097957fe5b5b5b50565b60085433600160a060020a039081169116146109f257600080fd5b6109fa61070e565b1515610a0557600080fd5b610a0d6106ea565b15610a1757600080fd5b60075460ff161515610a2857600080fd5b600754610100900460ff1615610a3d57600080fd5b600354600160a060020a0330163134011015610a5857600080fd5b6007805460ff191690555b5b565b670de0b6b3a764000081565b600854600160a060020a031681565b604080519081016040526000808252602082015290565b815481835581811511610ac457600202816002028360005260206000209182019101610ac49190610aca565b5b505050565b6106e191905b80821115610aea5760008082556001820155600201610ad0565b5090565b905600a165627a7a72305820a0c378c507ebd377e1a738929e55d3e69aa3d0c7b3e71817aaa84b15097eeb230029",
+  "networks": {
+    "1503436457666": {
+      "events": {
+        "0x1c91d0f8bf2ec0fe67e63e119ac3a1c966c0199af26633feb10f8fd527872db1": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_date",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "_amount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "_premium",
+              "type": "uint256"
+            }
+          ],
+          "name": "PolicyPayment",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xd6165b7e0a4eec62271d477ee66d0cccac513b49",
+      "updated_at": 1503523168677
+    },
+    "1503526020209": {
+      "events": {
+        "0x1c91d0f8bf2ec0fe67e63e119ac3a1c966c0199af26633feb10f8fd527872db1": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_date",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "_amount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "_premium",
+              "type": "uint256"
+            }
+          ],
+          "name": "PolicyPayment",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x8c2941128090a94185c81362ac158a8c7a7779d8",
+      "updated_at": 1503526032476
+    },
+    "1503595324805": {
+      "events": {
+        "0x1c91d0f8bf2ec0fe67e63e119ac3a1c966c0199af26633feb10f8fd527872db1": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_date",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "_amount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "_premium",
+              "type": "uint256"
+            }
+          ],
+          "name": "PolicyPayment",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x1f3fd28519d58c2dc92944c9f5c17b3513284901",
+      "updated_at": 1503595339781
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1503595339781
+}
